@@ -1,0 +1,12 @@
+Name: BatteryQV
+Type: FolderType
+Children:
+- Name: Voltaje
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Id_bat
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Estado
+  Type: BaseDataVariableType
+  DataType: String

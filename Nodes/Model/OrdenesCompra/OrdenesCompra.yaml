@@ -1,0 +1,28 @@
+Name: OrdenesCompra
+Type: FolderType
+Children:
+- Name: Fecha_Orden
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Proveedor
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Cantidad_Total
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Estado
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Fecha_Recepcion
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Costo_Total
+  Type: BaseDataVariableType
+  DataType: String
+- Name: QR
+  Type: BaseDataVariableType
+  DataType: String
+- Name: ID_OrdenCompra
+  Type: BaseDataVariableType
+  DataType: Int32

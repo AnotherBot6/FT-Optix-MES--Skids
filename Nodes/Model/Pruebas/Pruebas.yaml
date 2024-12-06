@@ -1,0 +1,21 @@
+Name: Pruebas
+Type: FolderType
+Children:
+- Name: ID_Prueba
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: ID_Skid
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Fecha_Prueba
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Resultado_Prueba
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Parametros_Prueba
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Observaciones
+  Type: BaseDataVariableType
+  DataType: String

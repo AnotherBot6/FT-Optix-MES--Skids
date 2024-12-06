@@ -1,0 +1,555 @@
+Name: DataStores
+Type: DataStoresCategoryFolder
+Children:
+- Name: ODBCDatabase1
+  Id: g=2b85e92d4b91dced3fbd20e6b0502d40
+  Type: ODBCStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: Usuarios
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Tarjeta_RFID
+          Type: StoreColumn
+          DataType: String
+        - Name: Nombre_Usuario
+          Type: StoreColumn
+          DataType: String
+        - Name: Contraseña
+          Type: StoreColumn
+          DataType: String
+        - Name: Rol
+          Type: StoreColumn
+          DataType: String
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+    - Name: Ordenes_Compra
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Fecha_Orden
+          Type: StoreColumn
+          DataType: String
+        - Name: Proveedor
+          Type: StoreColumn
+          DataType: String
+        - Name: Cantidad_Total
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Estado
+          Type: StoreColumn
+          DataType: String
+        - Name: Fecha_Recepcion
+          Type: StoreColumn
+          DataType: String
+        - Name: Costo_Total
+          Type: StoreColumn
+          DataType: String
+          Value: "0"
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: QR
+          Type: StoreColumn
+          DataType: String
+    - Name: Ordenes_Produccion
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ID_OrdenProduccion
+          Type: StoreColumn
+          DataType: Int32
+        - Name: ID_OrdenCompra
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Fecha_Asignacion
+          Type: StoreColumn
+          DataType: String
+        - Name: Estado_Orden
+          Type: StoreColumn
+          DataType: String
+        - Name: Fecha_Completado
+          Type: StoreColumn
+          DataType: String
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: QR
+          Type: StoreColumn
+          DataType: String
+    - Name: Inventario
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ID_Inventario
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Producto
+          Type: StoreColumn
+          DataType: String
+        - Name: Cantidad_Disponible
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Ubicacion
+          Type: StoreColumn
+          DataType: String
+        - Name: Estado_Producto
+          Type: StoreColumn
+          DataType: String
+        - Name: Fecha_Ultima_Actualizacion
+          Type: StoreColumn
+          DataType: String
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+    - Name: Skids
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ID_Skid
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Chasis_ID
+          Type: StoreColumn
+          DataType: String
+        - Name: Bateria_ID
+          Type: StoreColumn
+          DataType: String
+        - Name: Eje_ID
+          Type: StoreColumn
+          DataType: String
+        - Name: Fecha_Inicio_Ensamblaje
+          Type: StoreColumn
+          DataType: String
+        - Name: Fecha_Final_Ensamblaje
+          Type: StoreColumn
+          DataType: String
+        - Name: Estado_Skid
+          Type: StoreColumn
+          DataType: String
+        - Name: QR
+          Type: StoreColumn
+          DataType: String
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: ID_OrdenProduccion
+          Type: StoreColumn
+          DataType: String
+    - Name: Embalaje
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ID_Embalaje
+          Type: StoreColumn
+          DataType: Int32
+        - Name: ID_Skid
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Fecha_Embalaje
+          Type: StoreColumn
+          DataType: String
+        - Name: Responsable
+          Type: StoreColumn
+          DataType: String
+        - Name: Tipo_Embalaje
+          Type: StoreColumn
+          DataType: String
+        - Name: Estado_Embalaje
+          Type: StoreColumn
+          DataType: String
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+    - Name: Pruebas
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ID_Prueba
+          Type: StoreColumn
+          DataType: Int32
+        - Name: ID_Skid
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Fecha_Prueba
+          Type: StoreColumn
+          DataType: String
+        - Name: Resultado_Prueba
+          Type: StoreColumn
+          DataType: String
+        - Name: Parametros_Prueba
+          Type: StoreColumn
+          DataType: String
+        - Name: Observaciones
+          Type: StoreColumn
+          DataType: String
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+    - Name: Componentes
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: ID_Componente
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Tipo_Componente
+          Type: StoreColumn
+          DataType: String
+        - Name: Fabricante
+          Type: StoreColumn
+          DataType: String
+        - Name: Numero_Serie
+          Type: StoreColumn
+          DataType: String
+        - Name: Fecha_Entrada
+          Type: StoreColumn
+          DataType: String
+        - Name: Fecha_Instalacion
+          Type: StoreColumn
+          DataType: String
+        - Name: ID_Skid
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+    - Name: Historial_Movimientos
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: ID_Movimiento
+          Type: StoreColumn
+          DataType: Int32
+        - Name: ID_Inventario
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Tipo_Movimiento
+          Type: StoreColumn
+          DataType: String
+        - Name: Cantidad
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Fecha_Movimiento
+          Type: StoreColumn
+          DataType: String
+        - Name: ID_OrdenCompra
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Responsable
+          Type: StoreColumn
+          DataType: String
+  - Name: Type
+    Type: PropertyType
+    DataType: DBMSType
+    Value: 2
+  - Name: Username
+    Type: PropertyType
+    DataType: String
+    Value: "FLOW-X13\\carlo"
+  - Name: Password
+    Type: PropertyType
+    DataType: Password
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=13;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=59
+    Direction: Forward
+  - Name: DSN
+    Type: PropertyType
+    DataType: String
+    Value: "SkidLog"
+- Name: InfluxDBDatabase1
+  Id: g=f757970eeee554c7caa212e2498f0d82
+  Type: InfluxDBStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: Voltaje
+      Type: InfluxDBStoreTable
+      Children:
+      - Name: Tags
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Voltaje
+          Type: StoreColumn
+          DataType: Float
+        - Name: Id_bat
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Estado
+          Type: StoreColumn
+          DataType: String
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+  - Name: Token
+    Type: BaseDataVariableType
+    DataType: Password
+    Value: "L_cI5vEHP-hGnFwBpMnVZux8ttMmoieSE8zDONGgHQ0VZz1QefiwrE1XpGNwXTgAPEs5cdLNsBPkZm_lpp25Dw=="
+  - Name: Organization
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "RA"
+  - Name: Bucket
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Battery"
+  - Name: Server
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "127.0.0.1"
+  - Name: Port
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 8086
+  - Name: UseSSL
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=13;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=59
+    Direction: Forward

@@ -1,0 +1,25 @@
+Name: Historial_Movimientos
+Type: FolderType
+Children:
+- Name: ID_Movimiento
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: ID_Inventario
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Tipo_Movimiento
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Cantidad
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Fecha_Movimiento
+  Type: BaseDataVariableType
+  DataType: String
+- Name: ID_OrdenCompra
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Responsable
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"

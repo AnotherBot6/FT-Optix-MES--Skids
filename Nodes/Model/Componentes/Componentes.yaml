@@ -1,0 +1,24 @@
+Name: Componentes
+Type: FolderType
+Children:
+- Name: ID_Componente
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Tipo_Componente
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Fabricante
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Numero_Serie
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Fecha_Entrada
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Fecha_Instalacion
+  Type: BaseDataVariableType
+  DataType: String
+- Name: ID_Skid
+  Type: BaseDataVariableType
+  DataType: Int32

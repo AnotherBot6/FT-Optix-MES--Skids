@@ -1,0 +1,60 @@
+Name: CommDrivers
+Type: CommDriversCategoryFolder
+Children:
+- Name: SerialPort1
+  Type: SerialPort
+  Children:
+  - Name: PortName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "COM4"
+  - Name: Baudrate
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 9600
+  - Name: DataSize
+    Type: BaseDataVariableType
+    DataType: Byte
+    Value: 8
+  - Name: Parity
+    Type: BaseDataVariableType
+    DataType: Parity
+  - Name: StopBits
+    Type: BaseDataVariableType
+    DataType: StopBits
+  - Name: FlowControl
+    Type: BaseDataVariableType
+    DataType: FlowControl
+  - Name: Timeout
+    Type: BaseDataVariableType
+    DataType: Duration
+    Value: "0:00:00:5.0000000"
+  - Name: CommunicationStatus
+    Type: BaseDataVariableType
+    DataType: CommunicationStatus
+    AccessLevel: Read
+  - Class: Reference
+    Target: ns=25;i=9
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=10
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=11
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=14
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=17
+    Direction: Forward
+  - Class: Reference
+    Target: ns=25;i=22
+    Direction: Forward
+  - Name: tag1
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: RuntimeNetLogic1
+    Type: NetLogic
+- File: RAEtherNet_IPDriver1/RAEtherNet_IPDriver1.yaml

@@ -1,0 +1,11 @@
+Name: Trend
+Type: FolderType
+Children:
+- Name: Fecha
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "21-11-2024"
+- Name: Valor
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 20

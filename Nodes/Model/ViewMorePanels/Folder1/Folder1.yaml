@@ -1,0 +1,28 @@
+Name: Folder1
+Type: FolderType
+Children:
+- Name: check1
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
+- Name: temperatura
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: capacidad
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: densidad
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: volts
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: x
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: y
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: z
+  Type: BaseDataVariableType
+  DataType: Int32

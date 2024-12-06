@@ -1,0 +1,6 @@
+Name: Gemini
+Type: FolderType
+Children:
+- Name: Response
+  Type: BaseDataVariableType
+  DataType: String

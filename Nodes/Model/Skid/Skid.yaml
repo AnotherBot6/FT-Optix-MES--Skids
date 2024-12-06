@@ -1,0 +1,30 @@
+Name: Skid
+Type: FolderType
+Children:
+- Name: ID_Skid
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Chasis_ID
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Bateria_ID
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Eje_ID
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Fecha_Inicio_Ensamblaje
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Fecha_Final_Ensamblaje
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Estado_Skid
+  Type: BaseDataVariableType
+  DataType: String
+- Name: QR
+  Type: BaseDataVariableType
+  DataType: String
+- Name: ID_OrdenProduccion
+  Type: BaseDataVariableType
+  DataType: String

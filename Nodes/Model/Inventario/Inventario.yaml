@@ -1,0 +1,22 @@
+Name: Inventario
+Type: FolderType
+Children:
+- Name: ID_Inventario
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Producto
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Cantidad_Disponible
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Ubicacion
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Estado_Producto
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Fecha_Ultima_Actualizacion
+  Type: BaseDataVariableType
+  DataType: String

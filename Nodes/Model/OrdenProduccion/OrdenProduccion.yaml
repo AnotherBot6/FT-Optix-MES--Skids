@@ -1,0 +1,24 @@
+Name: OrdenProduccion
+Type: FolderType
+Children:
+- Name: ID_OrdenProduccion
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: ID_OrdenCompra
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Fecha_Asignacion
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Estado_Orden
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Fecha_Completado
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: QR
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"

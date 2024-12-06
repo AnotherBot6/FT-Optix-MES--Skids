@@ -1,0 +1,15 @@
+Name: LogIn
+Type: FolderType
+Children:
+- Name: Rol
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Contraseña
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Nombre_Usuario
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Tarjeta_RFID
+  Type: BaseDataVariableType
+  DataType: String

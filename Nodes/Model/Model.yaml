@@ -1,0 +1,39 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: LogIn/LogIn.yaml
+- Name: Autenticado
+  Type: BaseDataVariableType
+  DataType: Boolean
+- File: OrdenesCompra/OrdenesCompra.yaml
+- File: OrdenProduccion/OrdenProduccion.yaml
+- File: Historial_Movimientos/Historial_Movimientos.yaml
+- File: Skid/Skid.yaml
+- File: Inventario/Inventario.yaml
+- File: Embalaje/Embalaje.yaml
+- File: Componentes/Componentes.yaml
+- File: Pruebas/Pruebas.yaml
+- File: BatteryQV/BatteryQV.yaml
+- Name: Stage
+  Type: BaseDataVariableType
+  DataType: String
+- Name: query_1
+  Type: BaseDataVariableType
+  DataType: String
+- Name: query_2
+  Type: BaseDataVariableType
+  DataType: String
+- Name: test
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "2"
+- Name: Ordenesnuevas
+  Type: BaseDataVariableType
+  DataType: Int32
+- File: Trend/Trend.yaml
+- File: Gemini/Gemini.yaml
+- File: ViewMorePanels/ViewMorePanels.yaml
+- Name: TimeActual
+  Type: BaseDataVariableType
+  DataType: UtcTime
+  Value: "2203-01-01T00:00:00.0000000"

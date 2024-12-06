@@ -1,0 +1,22 @@
+Name: Embalaje
+Type: FolderType
+Children:
+- Name: ID_Embalaje
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: ID_Skid
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Fecha_Embalaje
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Responsable
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Tipo_Embalaje
+  Type: BaseDataVariableType
+  DataType: String
+- Name: Estado_Embalaje
+  Type: BaseDataVariableType
+  DataType: String
